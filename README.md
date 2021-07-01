@@ -1,4 +1,5 @@
-# vue_template
+# The-F2E Hotel
+https://chukuohua.github.io/The-F2E_Hotel/
 
 ## Project setup
 ```
