@@ -1,0 +1,250 @@
+@mixin form-btn {
+  height: 60px;
+  border-radius: 0;
+  color: white;
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+// menu
+.menu-btn{
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  .btn{
+    font-size: 24px;
+    color: white;
+    transform: rotate(90deg);
+  }
+}
+.open{
+  display: block;
+}
+.m-menu-sidebar{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(92, 88, 88, 0.151);
+  width: 100%;
+  height: 100%;
+  z-index: 9998;
+  display: none;
+  transition: all .5s;
+  &.active{
+    display: inline-block;
+  }
+}
+aside{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 9999;
+  background: $primary;
+  width: 290px;
+  height: 100%;
+  overflow: hidden;
+  display:inline-block;
+  box-shadow: 0px 0px 8px 2px #2f3131;
+  -webkit-transform: translateX(-299px);
+  transform: translateX(-299px);
+  transition: all .5s;
+  h2{
+    font-family: 'Yesteryear', sans-serif;
+    font-size: 28px;
+  }
+  .m-close{
+    padding-right: 12px;
+    font-size: 20px;
+    display:inline-block;
+    color: white;
+  }
+}
+.m-page--menu{
+  a{
+    padding-left: 1rem;
+    color: white;
+    &:hover{
+      background: white;
+      color: $primary;
+    }
+  }
+}
+.open{
+  aside{
+    -webkit-transform: translateX(0px);
+    transform: translateX(0px);
+  }
+}
+.roombox{
+  h1{
+    -webkit-writing-mode: vertical-rl;
+    writing-mode: vertical-rl;
+  }
+}
+.home-btn{
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  i{
+    font-size: 24px;
+  }
+}
+// form
+.form-bg{
+  background: #8C9A6533;
+  position: relative;
+  .form-control{
+    border: 0px;
+    border-bottom: 2px solid white;
+    background: transparent;
+    border-radius: 0;
+    padding: 0;
+  }
+  label,.total-txt{
+    color: $secondary;
+    font-size: 14px;
+    font-weight: 900;
+    letter-spacing: .48px;
+  }
+  .total-txt{
+    border-bottom: 2px solid white;
+    width: 100%;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+    display: block;
+  }
+  input{
+    letter-spacing: .48px;
+  }
+  .form-control:focus{
+    box-shadow: 0 0 0 0;
+  }
+  .float-end{
+    font-size: 24px;
+    color: $primary;
+    font-weight: bolder;
+  }
+  small{
+    color: #66666655
+  }
+  .sub-btn, .cancel-btn{
+    position: absolute;
+    bottom: 0;
+    @include form-btn;
+  }
+  .sub-btn{
+    right: 0;
+  }
+  .cancel-btn{
+    left: 0;
+  }
+}
+.success-room{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  .a{
+    fill: $primary;
+  }
+  h4{
+    font-size: 28px;
+    letter-spacing: 1.12px;
+    font-weight: 900;
+  }
+  p{
+    text-align: center;
+    letter-spacing: 0.64px;
+    font-weight: 600;
+  }
+}
+// content
+.room-content-box{
+  position: relative;
+  h2{
+    letter-spacing: 2px;
+    position: absolute;
+    top: -80px;
+    margin-left: 3rem;
+    z-index: 999;
+    font-size: 48px;
+    font-weight: 700;
+  }
+  p{
+    letter-spacing: 2px;
+    font-size: 18px;
+  }
+  .Rreserve{
+    position: absolute;
+    width: 25%;
+    top: -108px;
+    right: 0;
+    z-index: 99;
+    .btn-primary{
+      width: 100%;
+      @include form-btn;
+    }
+  }
+}
+small{
+  color: $secondary-100;
+}
+.room-description{
+  p{
+    margin-top: .5rem;
+    font-size: 14px;
+    color: $secondary;
+    font-weight: 900;
+  }
+  .pricetxt{
+    font-size: 18px;
+  }
+}
+.Amenities-area{
+  span{
+    margin-left: 10px;
+  }
+  .col{
+    display: grid;
+    grid-template-columns: 20px auto;
+    grid-template-rows: 55px;
+    align-items: baseline;
+    margin-top: .5rem;
+  }
+}
+.no-amenities{
+  color: $secondary-100;
+}
+.no-amenities-svg{
+  opacity: 0.3;
+}
+// DatePicker
+.datepicker{
+  right: 0;
+}
+.datepicker__dummy-wrapper--is-active {
+  border: 1px solid #8c9a65;
+}
+.datepicker__month-day--today .datepicker__month-day-wrapper {
+  border: 2px solid $primary !important;
+}
+.datepicker__month-day--first-day-selected,
+.datepicker__month-day--last-day-selected,
+.datepicker__month-day--allowed-checkout:hover,
+.datepicker__month-day--valid:hover{
+  background: $primary !important;
+}
+.datepicker__month-day--selected{
+  background: #8C9A6544 !important;
+  color: #35343d !important;
+}

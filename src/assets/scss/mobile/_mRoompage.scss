@@ -1,0 +1,67 @@
+@include pad(){
+  .roombox{
+    h1{
+      padding-left: 10px;
+      -webkit-writing-mode: horizontal-tb;
+      writing-mode: horizontal-tb;
+    }
+    .bg-primary{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .w-5,.w-95{
+      width: 100% !important;
+    }
+  }
+  .menu-btn{
+    position: static;
+    .btn{
+      transform: rotate(0deg);
+    }
+  }
+  .room-content-box{
+    position: relative;
+    h2{
+      letter-spacing: 2px;
+      position: static;
+      top: 0px;
+      margin: 1rem 0 1rem 1rem;
+      font-size: 30px;
+      font-weight: 700;
+    }
+    p{
+      letter-spacing: 2px;
+      font-size: 18px;
+    }
+  }
+  // Rreserve
+  .Rreserve{
+    display: none;
+  }
+  .sub-btn{
+    position: inherit !important;
+    width: 100% !important;
+  }
+  .Amenities-area{
+    small{
+      font-size: 20px;
+      color: $secondary;
+      margin-bottom: 10px;
+    }
+    .col{
+      grid-template-columns: 45px auto;
+      grid-template-rows: 45px;
+    }
+  }
+  .success-room{
+    padding: 15px 0;
+    margin-top: 1rem;
+    position: static;
+  }
+  .form-bg{
+    .cancel-btn{
+      position: static;
+    }
+  }
+}

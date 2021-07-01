@@ -1,0 +1,50 @@
+$primary: #8C9A65;
+$secondary:  #666666;
+$secondary-100: #66666666;
+$light: #ffff;
+
+$weight: 10%;
+$w: (
+  "5": $weight * .5,
+  "10": $weight * 1,
+  "20": $weight * 2,
+  "30": $weight * 3,
+  "40": $weight * 4,
+  "50": $weight * 5,
+  "60": $weight * 6,
+  "70": $weight * 7,
+  "80": $weight * 8,
+  "81": $weight * 8.1,
+  "90": $weight * 9,
+  "95": $weight * 9.5,
+  "100": $weight * 10,
+);
+.w {
+  @each $i, $val in $w {
+    &-#{$i} {
+      width: $val !important;
+    }
+  }
+}
+
+$opacity-nol: 1;
+$opacGroup: (
+  "100": $opacity-nol * .1,
+  "200": $opacity-nol * .2,
+  "300": $opacity-nol * .3,
+  "400": $opacity-nol * .4,
+  "500": $opacity-nol * .5,
+  "600": $opacity-nol * .6,
+  "700": $opacity-nol * .7,
+  "800": $opacity-nol * .8,
+  "900": $opacity-nol * .9,
+  "1000": $opacity-nol * 1,
+);
+
+.opac {
+  @each $i, $val in $opacGroup {
+    &-#{$i} {
+      opacity: $val !important;
+    }
+  }
+}

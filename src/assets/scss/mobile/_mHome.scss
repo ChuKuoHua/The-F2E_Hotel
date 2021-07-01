@@ -1,0 +1,18 @@
+@include pad(){
+  .header{
+    .fa-bars{
+      font-size: 20px;
+      color: $primary
+    }
+  }
+  .imgs-area {
+    a::before{
+      @include cover;
+      background: $secondary-100
+    }
+  }
+  .hotel-content{
+    display: block;
+    
+  }
+}

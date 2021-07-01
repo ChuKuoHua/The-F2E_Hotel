@@ -1,0 +1,83 @@
+:root{
+  --swiper-navigation-size: 30px;
+  --swiper-theme-color: #8C9A65;
+}
+.rooms-swiper{
+  height: 100vh;
+  .hotel-content{
+    display: block;
+    position: absolute;
+    padding-top: 5rem;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: $light;
+    p{
+      letter-spacing: 2px;
+    }
+    span{
+      font-size: 14px;
+    }
+    .btn-outline-light{
+      letter-spacing: 1px;
+    }
+  }
+  .screen{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #66666655
+  }
+  .swiper-button-prev, .swiper-container-rtl .swiper-button-next{
+    left: auto;
+    right: 60px;
+  }
+  .swiper-button-prev, .swiper-container-rtl .swiper-button-next,
+  .swiper-button-next, .swiper-container-rtl .swiper-button-prev{
+    bottom: 0
+  }
+  .swiper-button-prev, .swiper-button-next{
+    top: auto;
+  }
+  .swiper-button-prev.swiper-button-disabled, .swiper-button-next.swiper-button-disabled{
+    pointer-events: auto;
+  }
+  img{
+    object-fit: cover;
+  }
+}
+.room-swiper{
+  height: 80vh;
+}
+.swiper-container{
+  img{
+    height: 100%;
+    width: 100%;
+    // object-fit: cover;
+  }
+}
+.swiper-button-prev{
+  left: 0;
+}
+.swiper-button-next{
+  right: 0;
+} 
+.swiper-button-prev, .swiper-container-rtl .swiper-button-next,
+.swiper-button-next, .swiper-container-rtl .swiper-button-prev{
+  padding: 30px;
+  background: white;
+  opacity: 0.6;
+}
+.swiper-pagination-bullet{
+  width: 10px;
+  height: 10px;
+}
+.swiper-pagination{
+  width: 150px;
+}
+.swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet{
+  margin: 0 10px;
+}

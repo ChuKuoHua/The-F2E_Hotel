@@ -1,0 +1,31 @@
+// bootstrap
+@import "~bootstrap/scss/functions";
+@import "helpers/_variables";
+@import "~bootstrap/scss/bootstrap";
+
+@import "style/utils";
+@import 'tool/rwd';
+@import "style/header";
+@import "style/swiper";
+@import "style/home";
+@import "style/roompage";
+
+// mobile
+@import "mobile/mHome";
+@import "mobile/mRoompage";
+
+html{
+  color: $secondary;
+}
+body{
+  font-family: 'Questrial', sans-serif;
+}
+ol, ul{
+  padding-left: 0;
+}
+a{
+  text-decoration: none;
+}
+li{
+  list-style-type: none;
+}
