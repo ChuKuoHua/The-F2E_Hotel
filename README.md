@@ -1,5 +1,5 @@
 # The-F2E Hotel
-參考前端精神時光屋的旅遊關卡所設計的訂房網站。
+參考前端精神時光屋的關卡所設計的訂房網站。
 
 Demo：https://chukuohua.github.io/The-F2E_Hotel/
 
