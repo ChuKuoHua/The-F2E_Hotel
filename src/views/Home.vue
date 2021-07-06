@@ -6,25 +6,25 @@
       class="col-12 col-md-4 imgs-area"
       v-for="item of hotelData"
       :key="item.id">
-      <img :src="item.imageUrl" alt="">
-      <a href="#" @click="goRoomPage(item.id)">
-        <div class="hotel-content">
-          <h2 class="text-center mb-5">{{item.name}}</h2>
-          <div class="d-flex flex-column align-items-center">
-            <p>
-              <span>Weekday Rate</span>
-              <br>
-              {{item.holidayPrice | currency}} TWD / night
-            </p>
-            <p>
-              <span class="text-left">Weekend Rate</span>
-              <br>
-              {{item.normalDayPrice | currency}} TWD / night
-            </p>
-            <button @click="goRoomPage(item.id)" class="btn btn-outline-light px-5 mt-5">More</button>
-          </div>
+      <img :src="item.imageUrl" alt="room-img">
+      <!-- <a class="d-none d-md-block" href="#" @click="goRoomPage(item.id)"></a> -->
+      <div class="hotel-backdrop"></div>
+      <div class="hotel-content">
+        <h2 class="text-center mb-5">{{item.name}}</h2>
+        <div class="d-flex flex-column align-items-center">
+          <p>
+            <span>Weekday Rate</span>
+            <br>
+            {{item.holidayPrice | currency}} TWD / night
+          </p>
+          <p>
+            <span class="text-left">Weekend Rate</span>
+            <br>
+            {{item.normalDayPrice | currency}} TWD / night
+          </p>
+          <button @click="goRoomPage(item.id)" class="btn btn-outline-light px-5 mt-5">More</button>
         </div>
-      </a>
+      </div>
     </div>
   </div>
 </template>

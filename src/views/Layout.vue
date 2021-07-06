@@ -8,17 +8,20 @@
 <script>
 import Header from '@/components/Header.vue'
 
+
 export default {
   components: {
-    Header
+    Header,
   },
   data() {
     return{
       token: `${process.env.VUE_APP_TOKEN}`,
+      isOpacity: 0,
     }
   },
   created() {
     this.$http.defaults.headers.common.Authorization = `Bearer ${this.token}`;
   },
+  
 }
 </script>

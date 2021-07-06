@@ -51,6 +51,7 @@
 
 export default {
   created(){
+    this.closeMenu();
     this.$bus.$on('open-menu', () => {
       this.openMenu();
     });

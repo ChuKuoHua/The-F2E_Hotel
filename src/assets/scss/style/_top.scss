@@ -1,0 +1,21 @@
+.top {
+  transition: all .6s;
+  position: fixed;
+	bottom: 75px;
+	right: 15px;
+  z-index: 999;
+  a{
+    position: relative;
+    background: $primary;
+    padding: 12px 20px;
+    border-radius: 3px;
+    color: aliceblue;
+    box-shadow: 1px 1px 5px $secondary;
+  }
+  .fa-angle-up{
+    position: absolute;
+    top: 7px;
+    left: 12px;
+    font-size: 28px;
+  }
+}

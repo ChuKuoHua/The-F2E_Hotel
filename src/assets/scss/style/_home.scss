@@ -10,7 +10,7 @@
   position: relative;
   overflow: hidden;
   &:hover{
-    > a::before{
+    >.hotel-backdrop{
       @include cover;
       background: #66666640;
     }
